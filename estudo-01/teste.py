@@ -20,7 +20,7 @@ while True:
         opção = int(input('Escolha uma opção: '))
 
         if opção < 1 or opção > 4:
-            print('Opção inválida. Tente novamente.')
+            print('\033[31mOpção inválida. Tente novamente.\033[31m')
             continue # Loop para garantir que a opção esteja entre 1 e 3
 
 
@@ -49,5 +49,5 @@ while True:
             break
 
     except ValueError:
-        print('Valor inválido. Por favor, insira um número inteiro.')
+        print('\033[31mValor inválido. Por favor, insira um número inteiro.\033[m')
     
